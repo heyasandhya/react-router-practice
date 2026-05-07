@@ -1,16 +1,87 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Synco
+### AI Powered Interview Preparation Platform
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Prepare smarter for technical interviews with AI-generated interview reports, resume analysis, and personalized preparation workflows.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Synco is a full-stack AI-powered interview preparation platform designed to help candidates improve their interview readiness through AI-driven insights and personalized interview reports.
+
+The platform allows users to upload resumes, generate interview-focused reports, track interview history, and create optimized resume PDFs — all inside a modern and responsive web application.
+
+---
+## Core Functionalities
+
+Generate AI-powered interview reports
+Upload and analyze resumes
+Create resume PDFs
+Manage interview history
+Secure authentication & protected routes
+Personalized interview preparation workflow
+
+## Authentication Flow
+
+User registers or logs in
+JWT token is generated
+Token stored securely in cookies
+Protected routes validate authentication
+Unauthorized users are redirected to login
+
+## Features
+
+- Secure Authentication System
+- User Registration & Login
+- Protected Routes
+- AI-Based Interview Report Generation
+- Resume Upload Support
+- Personalized Resume PDF Generation
+- Interview Report Tracking
+- Responsive User Interface
+- Cookie-Based Authentication
+- REST API Integration
+
+---
+
+## Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- React Router DOM
+- Axios
+- Tailwind CSS
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- JWT Authentication
+- Cookie Parser
+- Multer
+
+---
+
+## Project Structure
+
+```bash
+synco/
+│
+├── frontend/
+│   ├── src/
+│   ├── components/
+│   ├── features/
+│   └── services/
+│
+├── backend/
+│   ├── controllers/
+│   ├── routes/
+│   ├── middleware/
+│   ├── models/
+│   └── config/
+│
+└── README.md
